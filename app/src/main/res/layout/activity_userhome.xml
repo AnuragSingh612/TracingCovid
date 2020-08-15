@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userhome">
+<Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/add"
+    android:text="Add"
+    ></Button>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/add"
+        android:text="Scan Qr"
+        android:id="@+id/scan"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:orientation="vertical"
+        android:layout_below="@+id/add"
+
+        >
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fill the details to add the customer"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cname"
+            android:hint="Name"
+            android:gravity="center_horizontal"
+           ></EditText>
+        <EditText
+            android:id="@+id/Caddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            />
+        <EditText
+            android:id="@+id/Cphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="phone"
+            android:layout_below="@+id/Caddress"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </LinearLayout>
+
+</RelativeLayout>

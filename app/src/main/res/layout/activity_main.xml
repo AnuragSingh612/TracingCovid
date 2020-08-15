@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Name"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/password"></EditText>
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/Email"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone"
+        android:layout_below="@+id/address"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/phone"
+        android:id="@+id/password">
+
+    </EditText>
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUP"
+        android:layout_below="@+id/name"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="155dp">
+
+    </Button>
+    <Button
+        android:id="@+id/sigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignIn"
+        android:layout_below="@+id/signup"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="155dp">
+
+    </Button>
+    <Button
+        android:id="@+id/datail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GetDetail"
+        android:layout_below="@+id/sigin"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="155dp">
+
+    </Button>
+
+</RelativeLayout>
